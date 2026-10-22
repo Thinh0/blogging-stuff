@@ -1,0 +1,13 @@
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="site-footer__row">
+      <p>&copy; {{ site.time | date: "%Y" }} {{ site.author.name }}. Built with Jekyll, hosted on GitHub Pages.</p>
+      <div class="site-footer__social">
+        {% if site.social.github %}<a href="https://github.com/{{ site.social.github }}" target="_blank" rel="me noopener">GitHub</a>{% endif %}
+        {% if site.social.twitter %}<a href="https://twitter.com/{{ site.social.twitter }}" target="_blank" rel="me noopener">Twitter</a>{% endif %}
+        {% if site.social.linkedin %}<a href="https://linkedin.com/in/{{ site.social.linkedin }}" target="_blank" rel="me noopener">LinkedIn</a>{% endif %}
+        <a href="{{ "/feed.xml" | relative_url }}">RSS</a>
+      </div>
+    </div>
+  </div>
+</footer>

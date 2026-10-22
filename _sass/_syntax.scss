@@ -1,0 +1,17 @@
+// Rouge syntax highlighting, tuned to follow the light/dark palette.
+.highlight {
+  background: var(--code-bg);
+
+  .c, .c1, .cm  { color: var(--text-muted); font-style: italic; } // comments
+  .k, .kd, .kn, .kp, .kr, .kt { color: var(--accent); font-weight: 600; } // keywords
+  .s, .s1, .s2, .sb, .sc, .sd, .se, .sh, .si, .sx, .sr { color: #3a8f5c; } // strings
+  .n, .nx       { color: var(--text); } // names
+  .nf, .nc, .nn { color: var(--tag-code-text); } // functions / classes
+  .nb, .bp      { color: var(--tag-tech-text); } // builtins
+  .o, .ow       { color: var(--text-muted); } // operators
+  .p            { color: var(--text-muted); } // punctuation
+  .mi, .mf, .m  { color: #a24222; } // numbers
+  .err          { color: #c0392b; }
+  .gi           { color: #3a8f5c; } // diff insert
+  .gd           { color: #c0392b; } // diff delete
+}

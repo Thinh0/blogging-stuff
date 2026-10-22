@@ -1,0 +1,195 @@
+// ── Tag pills ────────────────────────────────
+.tag {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  text-decoration: none;
+}
+
+.tag:hover {
+  text-decoration: none;
+  opacity: 0.85;
+}
+
+.tag--code   { background: var(--tag-code-bg);   color: var(--tag-code-text); }
+.tag--tech   { background: var(--tag-tech-bg);   color: var(--tag-tech-text); }
+.tag--sports { background: var(--tag-sports-bg); color: var(--tag-sports-text); }
+.tag--life   { background: var(--tag-life-bg);   color: var(--tag-life-text); }
+
+// ── Post card (home / listing) ───────────────
+.post-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+}
+
+.post-card__meta {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.post-card__title {
+  font-size: 1.4rem;
+  margin: 0 0 0.4rem;
+}
+
+.post-card__title a {
+  color: var(--text);
+}
+
+.post-card__title a:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.post-card__excerpt {
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.post-card__excerpt p {
+  margin: 0;
+}
+
+// ── Single post ──────────────────────────────
+.post-header {
+  margin-bottom: 2rem;
+}
+
+.post-header__meta {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.85rem;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  flex-wrap: wrap;
+}
+
+.post-header__title {
+  font-size: 2.1rem;
+  margin: 0 0 0.6rem;
+}
+
+.post-header__subtitle {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.post-content {
+  font-size: 1.08rem;
+}
+
+.post-content h2 {
+  margin-top: 2.5rem;
+  font-size: 1.5rem;
+}
+
+.post-content h3 {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+.post-footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.post-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.post-nav__link {
+  border: 1px solid var(--border);
+  border-radius: $radius;
+  padding: 1rem 1.1rem;
+  display: block;
+}
+
+.post-nav__link:hover {
+  border-color: var(--accent);
+  text-decoration: none;
+}
+
+.post-nav__link--next {
+  text-align: right;
+  grid-column: 2;
+}
+
+.post-nav__label {
+  display: block;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  margin-bottom: 0.25rem;
+}
+
+.post-nav__title {
+  color: var(--text);
+  font-weight: 600;
+}
+
+// ── Dot separator used in meta rows ──────────
+.dot::before {
+  content: "·";
+  margin-right: 0.6rem;
+  color: var(--border);
+}
+
+// ── Hero / intro on home page ────────────────
+.intro {
+  padding: 0.5rem 0 0.5rem;
+}
+
+.intro p {
+  color: var(--text-muted);
+  font-size: 1.08rem;
+  max-width: 38rem;
+}
+
+// ── Empty state ──────────────────────────────
+.empty-state {
+  color: var(--text-muted);
+  padding: 2rem 0;
+}
+
+// ── Buttons ──────────────────────────────────
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--accent);
+  color: var(--accent-text);
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+.btn:hover {
+  text-decoration: none;
+  opacity: 0.9;
+}

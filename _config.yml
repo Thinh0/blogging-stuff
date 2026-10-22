@@ -1,0 +1,62 @@
+# ─────────────────────────────────────────────
+# Site settings — edit these to make it yours
+# ─────────────────────────────────────────────
+title: "Thinh Writes"
+tagline: "Code. Tech. Sports. Occasionally all three at once."
+description: >-
+  A personal corner of the internet for thoughts on software, technology,
+  and sports — and wherever those happen to collide.
+author:
+  name: "Thinh Nguyen"
+  email: "thu.for.sharing@gmail.com"
+
+# Base URL — leave empty if deploying to <username>.github.io,
+# or set to "/repo-name" if deploying to a project page.
+baseurl: ""
+url: "https://thinh0.github.io"
+
+# Social / footer links — remove any line you don't want to show
+social:
+  github: "Thinh0"
+  # twitter: "yourhandle"
+  # linkedin: "yourhandle"
+
+# Topics shown in the nav filter on the home page.
+# Use these as the `category` front matter value on posts.
+categories:
+  - name: "Code"
+    slug: "code"
+  - name: "Tech"
+    slug: "tech"
+  - name: "Sports"
+    slug: "sports"
+  - name: "Life"
+    slug: "life"
+
+# Reading time (words per minute) used by the reading-time include
+reading_speed: 220
+
+# ─────────────────────────────────────────────
+# Build settings
+# ─────────────────────────────────────────────
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+permalink: /:year/:month/:day/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
+  - vendor

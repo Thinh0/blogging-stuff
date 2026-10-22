@@ -1,0 +1,172 @@
+.wrap {
+  max-width: $content-width;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.wrap--wide {
+  max-width: $wide-width;
+}
+
+// ── Site header ──────────────────────────────
+.site-header {
+  padding: 2.25rem 0 1.5rem;
+}
+
+.site-header__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.site-header__brand {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.site-header__title {
+  font-family: $font-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.site-header__title:hover {
+  text-decoration: none;
+  color: var(--accent);
+}
+
+.site-header__tagline {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.site-nav a {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.site-nav a:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+// ── Theme toggle ─────────────────────────────
+.theme-toggle {
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  color: var(--text);
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex: none;
+}
+
+.theme-toggle:hover {
+  border-color: var(--accent);
+}
+
+.theme-toggle svg {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.theme-toggle .icon-moon { display: none; }
+:root[data-theme="dark"] .theme-toggle .icon-sun { display: none; }
+:root[data-theme="dark"] .theme-toggle .icon-moon { display: inline; }
+
+// ── Topic filter pills on home ───────────────
+.topic-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.75rem 0 2rem;
+}
+
+.topic-filter a {
+  border: 1px solid var(--border);
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.topic-filter a:hover,
+.topic-filter a.is-active {
+  border-color: var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+}
+
+// ── Footer ───────────────────────────────────
+.site-footer {
+  border-top: 1px solid var(--border);
+  margin-top: 4rem;
+  padding: 2rem 0 3rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.site-footer__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.site-footer__social {
+  display: flex;
+  gap: 1rem;
+}
+
+.site-footer a {
+  color: var(--text-muted);
+}
+
+.site-footer a:hover {
+  color: var(--accent);
+}
+
+// ── Pagination ───────────────────────────────
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin: 2.5rem 0;
+  gap: 1rem;
+}
+
+.pagination a {
+  border: 1px solid var(--border);
+  padding: 0.5rem 1rem;
+  border-radius: $radius-sm;
+  color: var(--text);
+}
+
+.pagination a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+}
+
+@media (max-width: 36rem) {
+  .site-header__row {
+    align-items: flex-start;
+  }
+
+  .site-nav {
+    gap: 0.85rem;
+  }
+}
